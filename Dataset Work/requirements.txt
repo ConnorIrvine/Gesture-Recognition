@@ -4,6 +4,5 @@ numpy
 pandas
 matplotlib
 matlabengine==23.2.2
-dropbox
 dotenv
 tabulate
