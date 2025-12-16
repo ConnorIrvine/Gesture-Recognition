@@ -1,0 +1,3 @@
+# Ignore OSF storage downloads/archives
+osfstorage-archive/
+pkl_dataset/
