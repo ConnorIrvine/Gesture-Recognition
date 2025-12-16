@@ -1,4 +1,5 @@
 # Ignore OSF storage downloads/archives
 dataset_cleaning/osfstorage-archive/
 dataset_cleaning/pkl_dataset/
+dataset_cleaning/pkl_dataset_resampled/
 venv/
