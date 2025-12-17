@@ -3,7 +3,6 @@ scikit-learn
 numpy
 pandas
 matplotlib
-matlabengine==23.2.2
 dotenv
 tabulate
 librosa
