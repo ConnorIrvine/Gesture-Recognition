@@ -17,11 +17,14 @@ def label():
     plt.close('all')
 
     try:
-        labels = pd.read_csv('labels.csv')
-        label_list = labels['file'].tolist()
         killed_files = pd.read_csv('kill_list.csv')
     except:
         killed_files = pd.DataFrame({'file': [], 'labeller': []})
+
+    try:
+        labels = pd.read_csv('labels.csv')
+        label_list = labels['file'].tolist()
+    except:
         labels = pd.DataFrame({'file': [], 'start': [], 'end': [], 'labeller': []})
         label_list = []
 
