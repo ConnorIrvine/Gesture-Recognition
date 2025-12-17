@@ -23,6 +23,7 @@ def label():
     except:
         killed_files = pd.DataFrame({'file': [], 'labeller': []})
         labels = pd.DataFrame({'file': [], 'start': [], 'end': [], 'labeller': []})
+        label_list = []
 
     for dir in dirs:
         files = [x for x in os.listdir(OUT_ROOT / Path(dir)) if '.pkl' in x]
