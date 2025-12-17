@@ -136,6 +136,8 @@ def label():
             quit_button = Button(ax_quit_button, 'Quit')
             quit_button.on_clicked(end_program)
 
+            plt.text(-4.5, 0.2, f"Movement: {temp['movement']} | Speed: {temp['speed']}", fontsize=12, bbox=dict(facecolor='yellow', alpha=0.5))
+
             if quit:
                 return
 
