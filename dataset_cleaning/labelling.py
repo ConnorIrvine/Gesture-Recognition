@@ -50,7 +50,7 @@ def label():
             emg = temp['emg']
 
             # print file data
-            if temp['movement'] == 'disc' and temp['movement'] == 'thumbAdd':
+            if temp['movement'] == ['disc'] and temp['movement'] == ['thumbAdd']:
                 continue
             print(f"Movement: {temp['movement']} | Speed: {temp['speed']}")
 
