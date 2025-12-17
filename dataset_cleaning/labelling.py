@@ -18,6 +18,7 @@ def label():
 
     try:
         labels = pd.read_csv('labels.csv')
+        label_list = labels['file'].tolist()
         killed_files = pd.read_csv('kill_list.csv')
     except:
         killed_files = pd.DataFrame({'file': [], 'labeller': []})
@@ -27,7 +28,7 @@ def label():
         files = [x for x in os.listdir(OUT_ROOT / Path(dir)) if '.pkl' in x]
         for file in files:
             print(file)
-            if file in labels['file'].tolist():
+            if file in label_list:
                 print(f"Skipping file: {file}")
                 continue
 
@@ -55,7 +56,7 @@ def label():
             time = np.arange(mh2.shape[0]) / sr
             ax1.plot(time, mh2.T, label='Central Flexor (MH2)')
             ax1.plot(time, exg5.T, label='Central Extensor (EXG5)', alpha=0.5)
-            ax1.legend()
+            # ax1.legend()
             ax1.set_title('Two Channels (1 flexor, 1 extensor)')
 
             # Spectrograms
