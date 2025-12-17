@@ -19,8 +19,10 @@ def label():
 
     try:
         killed_files = pd.read_csv('kill_list.csv')
+        kill_list = killed_files['file'].tolist()
     except:
         killed_files = pd.DataFrame({'file': [], 'labeller': []})
+        kill_list = []
 
     try:
         labels = pd.read_csv('labels.csv')
@@ -33,7 +35,7 @@ def label():
         files = [x for x in os.listdir(OUT_ROOT / Path(dir)) if '.pkl' in x]
         for file in files:
             print(file)
-            if file in label_list:
+            if file in label_list or file in kill_list:
                 print(f"Skipping file: {file}")
                 continue
 
@@ -46,6 +48,12 @@ def label():
 
             temp = pd.read_pickle(OUT_ROOT / Path(dir) / Path(file))
             emg = temp['emg']
+
+            # print file data
+            if temp['movement'] == 'disc' and temp['movement'] == 'thumbAdd':
+                continue
+            print(f"Movement: {temp['movement']} | Speed: {temp['speed']}")
+
             fig, (ax0, ax1, ax2, ax3) = plt.subplots(4, 1, figsize=(12, 6), sharex=True)
 
             time = np.arange(emg[:, ::6].shape[1]) / (SAMPLING_RATE // 6)
