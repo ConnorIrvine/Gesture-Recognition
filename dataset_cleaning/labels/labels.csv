@@ -756,8 +756,6 @@ detop_exp01_subj02_Sess3_06_06.pkl,3.909390685,5.8654612,aidan
 detop_exp01_subj02_Sess2_10_01.pkl,3.988514138,5.3805816,aidan
 detop_exp01_subj02_Sess3_08_02.pkl,5.129454919,8.940987684,aidan
 detop_exp01_subj02_Sess3_04_02.pkl,3.492323449,5.178190632,aidan
-detop_exp01_subj02_Sess2_12_05.pkl,0,4,aidan
-detop_exp01_subj03_Sess3_07_04.pkl,0.640080146,0,connor
 detop_exp01_subj03_Sess3_11_02.pkl,5.510700445,9.106827533,connor
 detop_exp01_subj03_Sess2_08_02.pkl,3.934624173,8.531538809,connor
 detop_exp01_subj03_Sess1_02_05.pkl,4.04979657,8.803538805,connor
@@ -962,7 +960,6 @@ detop_exp01_subj04_Sess3_07_05.pkl,1.363253371,9.242219464,connor
 detop_exp01_subj04_Sess2_03_06.pkl,1.906739091,6.029063572,connor
 detop_exp01_subj04_Sess2_03_02.pkl,1.918500485,5.252137708,connor
 detop_exp01_subj04_Sess3_08_06.pkl,1.604869089,9.90317204,connor
-detop_exp01_subj04_Sess3_02_03.pkl,,0.597581552,connor
 detop_exp01_subj04_Sess2_10_01.pkl,1.037469189,10.53212181,connor
 detop_exp01_subj04_Sess2_02_01.pkl,0.992901399,6.206864968,connor
 detop_exp01_subj04_Sess2_10_06.pkl,1.008733494,6.153611049,connor
@@ -975,7 +972,6 @@ detop_exp01_subj04_Sess3_11_04.pkl,1.180910303,8.257289926,connor
 detop_exp01_subj04_Sess3_11_03.pkl,1.017296111,6.507993692,connor
 detop_exp01_subj04_Sess3_09_06.pkl,2.33184514,8.395964104,connor
 detop_exp01_subj04_Sess2_02_05.pkl,2.610894896,9.662368166,connor
-detop_exp01_subj04_Sess3_02_02.pkl,,0.639236502,connor
 detop_exp01_subj04_Sess3_13_02.pkl,1.805480298,5.9671728,connor
 detop_exp01_subj04_Sess2_07_02.pkl,0.902783487,6.387374059,connor
 detop_exp01_subj04_Sess2_01_01.pkl,1.400516803,9.742206738,connor
@@ -1000,7 +996,6 @@ detop_exp01_subj04_Sess2_12_02.pkl,3.750533815,18.49294045,connor
 detop_exp01_subj04_Sess1_12_03.pkl,1.670267651,9.584708698,connor
 detop_exp01_subj04_Sess3_10_05.pkl,1.295699535,8.379811794,connor
 detop_exp01_subj04_Sess2_03_05.pkl,1.08060005,5.050866584,connor
-detop_exp01_subj04_Sess1_03_05.pkl,,0.472616704,connor
 detop_exp01_subj04_Sess1_11_02.pkl,4.523407898,17.5350874,connor
 detop_exp01_subj04_Sess2_03_03.pkl,1.392600232,8.381097663,connor
 detop_exp01_subj04_Sess2_06_04.pkl,1.931552908,9.017713303,connor
@@ -1040,7 +1035,6 @@ detop_exp01_subj04_Sess2_05_01.pkl,1.05774172,8.733283832,connor
 detop_exp01_subj04_Sess2_10_05.pkl,1.64495535,10.09882128,connor
 detop_exp01_subj04_Sess1_12_04.pkl,0.690277441,6.377730559,connor
 detop_exp01_subj04_Sess3_10_04.pkl,3.80953366,7.809652163,connor
-detop_exp01_subj04_Sess2_11_02.pkl,,0.414299775,connor
 detop_exp01_subj04_Sess2_04_06.pkl,0.675672108,5.80779123,connor
 detop_exp01_subj04_Sess1_11_04.pkl,0.924850264,8.941961779,connor
 detop_exp01_subj04_Sess3_13_05.pkl,0.981147019,6.312233279,connor
@@ -1069,14 +1063,12 @@ detop_exp01_subj04_Sess2_03_04.pkl,1.739214715,8.718344188,connor
 detop_exp01_subj04_Sess1_08_02.pkl,1.056353558,4.474221373,connor
 detop_exp01_subj04_Sess2_04_04.pkl,1.326673746,6.005676143,connor
 detop_exp01_subj04_Sess2_06_06.pkl,0.920617546,6.577933888,connor
-detop_exp01_subj04_Sess1_05_06.pkl,,0.489278684,connor
 detop_exp01_subj04_Sess2_02_04.pkl,0.919273579,5.667241273,connor
 detop_exp01_subj04_Sess1_11_03.pkl,1.699714518,8.01968715,connor
 detop_exp01_subj04_Sess2_12_05.pkl,1.812811494,8.250834313,connor
 detop_exp01_subj04_Sess1_11_06.pkl,1.6428374,8.030895069,connor
 detop_exp01_subj04_Sess3_10_02.pkl,1.211357331,5.609556785,connor
 detop_exp01_subj04_Sess1_09_03.pkl,1.082294848,5.928930526,connor
-detop_exp01_subj02_Sess3_02_02.pkl,,6.130508233,connor
 detop_exp01_subj02_Sess2_08_03.pkl,1.705086571,7.042948238,connor
 detop_exp01_subj02_Sess2_08_01.pkl,2.59801269,7.265913054,connor
 detop_exp01_subj02_Sess3_02_01.pkl,1.888944352,5.890290214,connor
