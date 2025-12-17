@@ -15,6 +15,7 @@ SAMPLING_RATE = 512
 def label():
     dirs = [entry.name for entry in os.scandir(OUT_ROOT) if entry.is_dir()]
     plt.close('all')
+    quit = False
 
     try:
         killed_files = pd.read_csv('kill_list.csv')
@@ -99,7 +100,7 @@ def label():
             # Clicking the kill button will add to the ignore list
             def close_plot_kill(event):
                 nonlocal kill
-                print("Data added to kill list")
+                print("Data added to kill list...")
                 kill = True
                 plt.close(fig)
             ax_close_button = plt.axes([0.8, 0.05, 0.1, 0.075]) 
@@ -109,13 +110,26 @@ def label():
             # Clicking the OK button will just use the start/end time of the recording
             def close_plot_ok(event):
                 nonlocal start, end
-                print("aight")
+                print("Setting start/end time to the full recording...")
                 start = 0
                 end = time[-1]
                 plt.close(fig)
             ax_ok_button = plt.axes([0.65, 0.05, 0.1, 0.075]) 
             ok_button = Button(ax_ok_button, 'OK')
             ok_button.on_clicked(close_plot_ok)
+
+            # Clicking the OK button will just use the start/end time of the recording
+            def end_program(event):
+                nonlocal quit
+                print("Closing Program...")
+                quit = True
+                plt.close(fig)
+            ax_quit_button = plt.axes([0.50, 0.05, 0.1, 0.075]) 
+            quit_button = Button(ax_quit_button, 'Quit')
+            quit_button.on_clicked(end_program)
+
+            if quit:
+                return
 
             plt.show()
 
