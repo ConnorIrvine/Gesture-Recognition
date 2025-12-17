@@ -40,7 +40,11 @@ def label():
 
             temp = pd.read_pickle(OUT_ROOT / Path(dir) / Path(file))
             emg = temp['emg']
-            fig, (ax1, ax2, ax3) = plt.subplots(3, 1, figsize=(12, 6), sharex=True)
+            fig, (ax0, ax1, ax2, ax3) = plt.subplots(4, 1, figsize=(12, 6), sharex=True)
+
+            time = np.arange(emg[:, ::6].shape[1]) / (SAMPLING_RATE // 6)
+            ax0.plot(time, emg[:, ::6].T)
+            ax0.set_title('All Channels')
 
             # 65th emg channel is MH2 -- 64 counting 0 index
             mh2 = emg[64, :]    # flexor
@@ -49,9 +53,10 @@ def label():
             sr = SAMPLING_RATE
             # Generate plot
             time = np.arange(mh2.shape[0]) / sr
-            ax1.plot(time, mh2.T, label='Central Flexor')
-            ax1.plot(time, exg5.T, label='Central Extensor', alpha=0.5)
+            ax1.plot(time, mh2.T, label='Central Flexor (MH2)')
+            ax1.plot(time, exg5.T, label='Central Extensor (EXG5)', alpha=0.5)
             ax1.legend()
+            ax1.set_title('Two Channels (1 flexor, 1 extensor)')
 
             # Spectrograms
             mh2_float = np.array(mh2, dtype=np.float32)
