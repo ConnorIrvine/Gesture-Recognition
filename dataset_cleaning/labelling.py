@@ -6,8 +6,8 @@ from matplotlib.widgets import Button
 from matplotlib.collections import LineCollection
 
 ROOT = Path.cwd()
-OUT_ROOT = ROOT / 'pkl_dataset_resampled' 
-LABELLER = 'aidan'
+OUT_ROOT = ROOT / 'pkl_dataset_resampled_connor' 
+LABELLER = 'connor'
 
 def label():
     dirs = [entry.name for entry in os.scandir(OUT_ROOT) if entry.is_dir()]
