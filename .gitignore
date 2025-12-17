@@ -3,3 +3,4 @@ dataset_cleaning/osfstorage-archive/
 dataset_cleaning/pkl_dataset/
 dataset_cleaning/pkl_dataset_resampled/
 venv/
+dataset_cleaning/dataset.pkl
