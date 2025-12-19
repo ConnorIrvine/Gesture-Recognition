@@ -4,4 +4,6 @@ dataset_cleaning/pkl_dataset/
 dataset_cleaning/pkl_dataset_resampled/
 dataset_cleaning/dataset.pkl
 dataset_cleaning/dataset_regression.pkl
+dataset_cleaning/krr_rbf_results_fine.pkl
+dataset_cleaning/krr_rbf_results.pkl
 venv/
