@@ -6,4 +6,7 @@ dataset_cleaning/dataset.pkl
 dataset_cleaning/dataset_regression.pkl
 dataset_cleaning/krr_rbf_results_fine.pkl
 dataset_cleaning/krr_rbf_results.pkl
+dataset_cleaning/svm_accuracy_grid.pkl
+dataset_cleaning/svm_output.pkl
+dataset_cleaning/cnn_arch_sweep_blocks_layers.pkl
 venv/
